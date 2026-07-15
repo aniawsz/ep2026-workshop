@@ -1,20 +1,15 @@
 # Setting up the Playground
-Get comfty on your command line for this set up. You might be able to run the following lines from your IDE directly if it renders .md files and supports runing bash prompts from them. You can use your IDE terminal, Terminal on MacOs or Linux, or Command Prompt on Windows.
+Get comfy on your command line for this set up. You might be able to run the following lines from your IDE directly if it renders .md files and supports runing bash prompts from them. You can use your IDE terminal, Terminal on MacOs or Linux, or Command Prompt on Windows.
 
 ## Get our code from github
-Use your favourite git client to clone our workshop [repo](https://github.com/dynamic-cast/ADC24).
+Use your favourite git client to clone our workshop [repo](https://github.com/aniawsz/ep2026-workshop).
 This will include the example app and complete workshop.
 ```bash
-git clone git@github.com:dynamic-cast/ADC24.git
-```
-
-For the first part of the workshop, please check out our branch
-```bash
-git checkout part-1
+git clone git@github.com:aniawsz/ep2026-workshop.git
 ```
 
 ## Setting up a local environment
-For this project, you'll need a python version between 3.8. and 3.12 (numpy does not support 3.13) Check your version with:
+For this project, you'll need a python version between 3.8. and 3.12. Check your version with:
 
 ```bash
 python --version
@@ -62,7 +57,11 @@ Only one more thing to do on the command line to start up jupyter notebook.
 jupyter notebook
 ```
 
-This will make a browser pop up showing a file index. Open playground.ipynb.
+This will make a browser pop up showing a file index.
+
+Open **playground.ipynb**.
+
+
 If the browser does not pop up automatically, you can click on the link in the command line output:
 ![Link to local jupyter host](jupyter_setup_resources/jupyter_server.jpg)
 
@@ -76,18 +75,10 @@ To select our workshop environment in jupyter notebook you can follow these step
 ![Select Kernel](jupyter_setup_resources/select_kernel3.jpg)
 
 ## Downloading the RAVE models
-You can use the line from the notebook to download the model, if you're on mac and haven't downloaded files from python before you might need to follow the step below.
-If you prefer you can download the models manually [here](https://acids-ircam.github.io/rave_models_download) and pass the path to the file when creating the audio engine. We recommend puttingit in the ADC24 folder root.  
+You can use the line from the notebook to download the model. If you're on Mac and haven't downloaded files from Python before, you might need to follow the step below.
 
-### Mac Users
-#### Install certificates so you can download the model file
-Use the Spotlight search to find the file that executes the command. You can press command + space bar to open the search bar and start typing "Install Certificate.command"
-![Install the certificate](jupyter_setup_resources/install_certificates.jpg)
-You can double click on the entry, this will open a terminal and install the certificate needed to verify HTTPS connections.
+If you prefer, you can download the models manually [here](https://acids-ircam.github.io/rave_models_download) (in the example we use darbouka_onnx model) and pass the path to the file when creating the audio engine. We recommend putting it in the workshop folder root.
 
-If you do this, you'll need to restart the jupyter kernel. If you still have troubles, please try to download the file and put it in the ADC24 folder.
-
-Now you can execute the lines in the notebook and make some noise, yay.
 
 # Trouble Shooting
 ![NetworkError](jupyter_setup_resources/network_error.jpg)
